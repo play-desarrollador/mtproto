@@ -10,7 +10,7 @@ import (
 
 const (
 	//TODO: elastic timeout
-	TIMEOUT_RPC               = 5 * time.Second
+	TIMEOUT_RPC               = 60 * time.Second //Dirty for test
 	TIMEOUT_INVOKE_WITH_LAYER = 10 * time.Second
 	TIMEOUT_UPDATES_GETSTATE  = 7 * time.Second
 	TIMEOUT_SESSION_BINDING   = TIMEOUT_INVOKE_WITH_LAYER + TIMEOUT_UPDATES_GETSTATE
